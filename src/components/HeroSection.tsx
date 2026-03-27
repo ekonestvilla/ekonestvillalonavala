@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section className="relative h-screen min-h-[600px] w-full overflow-hidden">
       <img
         src={heroImg}
-        alt="Luxury 5BHK villa in Lonavala with infinity pool and mountain views"
+        alt="Eko Nest Villa — Luxury 5BHK in Lonavala with infinity pool and mountain views"
         className="absolute inset-0 h-full w-full object-cover"
         width={1920}
         height={1080}

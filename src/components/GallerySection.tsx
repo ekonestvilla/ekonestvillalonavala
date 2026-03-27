@@ -22,7 +22,7 @@ const GallerySection = () => {
           className="mb-14 text-center"
         >
           <p className="mb-2 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-accent">Gallery</p>
-          <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl">Experience the Villa</h2>
+          <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl">Experience Eko Nest Villa</h2>
         </motion.div>
         <div className="grid gap-4 md:grid-cols-2">
           {images.map((img, i) => (
