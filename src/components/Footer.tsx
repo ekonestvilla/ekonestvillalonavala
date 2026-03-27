@@ -8,13 +8,13 @@ const Footer = () => (
         <p className="mt-1 font-sans text-sm text-background/60">Your luxury retreat in the Western Ghats</p>
       </div>
       <div className="flex items-center gap-6">
-        <a href="tel:+919999999999" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
-          <Phone className="h-4 w-4" /> +91 99999 99999
+        <a href="tel:+91XXXXXXXXXX" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
+          <Phone className="h-4 w-4" /> +91 XXXXX XXXXX
         </a>
         <a href="mailto:stay@villalonavala.com" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
           <Mail className="h-4 w-4" /> stay@villalonavala.com
         </a>
-        <a href="#" className="text-background/80 transition-colors hover:text-background">
+        <a href="https://instagram.com/XXXXX" target="_blank" rel="noopener noreferrer" className="text-background/80 transition-colors hover:text-background">
           <Instagram className="h-5 w-5" />
         </a>
       </div>
