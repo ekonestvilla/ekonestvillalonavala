@@ -20,7 +20,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="mx-auto mt-8 max-w-6xl border-t border-background/10 pt-6 text-center">
-      <p className="font-sans text-xs text-background/40">© 2026 Villa Lonavala. All rights reserved.</p>
+      <p className="font-sans text-xs text-background/40">© 2026 Eko Nest Villa. All rights reserved.</p>
     </div>
   </footer>
 );
