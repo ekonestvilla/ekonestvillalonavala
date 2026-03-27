@@ -12,7 +12,7 @@ const Footer = () => (
           <Phone className="h-4 w-4" /> +91 99999 99999
         </a>
         <a href="mailto:stay@villalonavala.com" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
-          <Mail className="h-4 w-4" /> stay@villalonavala.com
+          <Mail className="h-4 w-4" /> stay@ekonestvilla.com
         </a>
         <a href="#" className="text-background/80 transition-colors hover:text-background">
           <Instagram className="h-5 w-5" />
