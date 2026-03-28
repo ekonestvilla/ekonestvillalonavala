@@ -37,7 +37,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mb-10 max-w-xl font-sans text-lg font-light text-secondary/90"
         >
-          A luxurious 5BHK villa nestled in the Western Ghats — where modern comfort meets nature's grandeur.
+          5 stunning bedrooms, a private pool, panoramic mountain views — your ultimate getaway in the heart of Lonavala awaits.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
