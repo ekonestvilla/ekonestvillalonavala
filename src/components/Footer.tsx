@@ -11,8 +11,8 @@ const Footer = () => (
         <a href="tel:+919004482582" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
           <Phone className="h-4 w-4" /> +91 90044 82582
         </a>
-        <a href="mailto:stay@villalonavala.com" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
-          <Mail className="h-4 w-4" /> stay@villalonavala.com
+        <a href="mailto:Ekonestvilla@gmail.com" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
+          <Mail className="h-4 w-4" /> Ekonestvilla@gmail.com
         </a>
         <a href="https://instagram.com/eko_nest_villa" target="_blank" rel="noopener noreferrer" className="text-background/80 transition-colors hover:text-background">
           <Instagram className="h-5 w-5" />
