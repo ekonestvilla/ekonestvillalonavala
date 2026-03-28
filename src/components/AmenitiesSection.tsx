@@ -5,16 +5,16 @@ import {
 } from "lucide-react";
 
 const amenities = [
-  { icon: Utensils, label: "Fully Equipped Kitchen" },
-  { icon: Tv, label: "Smart TVs in Every Room" },
-  { icon: Flame, label: "BBQ & Bonfire Area" },
-  { icon: TreePine, label: "Private Garden" },
-  { icon: Dumbbell, label: "Fitness Area" },
-  { icon: ShieldCheck, label: "24/7 Security" },
-  { icon: Wind, label: "Air Conditioning" },
-  { icon: Coffee, label: "Espresso Machine" },
+  { icon: TreePine, label: "Private Lawn & Garden" },
+  { icon: Wind, label: "Private Deck" },
+  { icon: Coffee, label: "Gazebo Lounge" },
+  { icon: Flame, label: "Bonfire Area" },
   { icon: Gamepad2, label: "Indoor Games Room" },
   { icon: Music, label: "Bluetooth Speakers" },
+  { icon: Utensils, label: "Modern Kitchenette" },
+  { icon: Tv, label: "50\" LED Smart TV" },
+  { icon: ShieldCheck, label: "24/7 Security" },
+  { icon: Dumbbell, label: "Swimming Pool" },
 ];
 
 const AmenitiesSection = () => {
