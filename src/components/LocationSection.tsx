@@ -24,8 +24,8 @@ const LocationSection = () => {
             <div className="flex items-start gap-4">
               <MapPin className="mt-1 h-5 w-5 shrink-0 text-primary" />
               <div>
-                <p className="font-sans font-semibold text-foreground">Lonavala, Maharashtra</p>
-                <p className="text-sm text-muted-foreground">Nestled in the Sahyadri mountain range of the Western Ghats</p>
+                <p className="font-sans font-semibold text-foreground">New Tungarli Road, Lonavala</p>
+                <p className="text-sm text-muted-foreground">Maharashtra 410401, India</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
