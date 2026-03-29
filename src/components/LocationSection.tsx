@@ -51,7 +51,7 @@ const LocationSection = () => {
           >
             <iframe
               title="Eko Nest Villa Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.5!2d73.4072!3d18.7557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b7a3d4c0e8e1%3A0x1234567890abcdef!2sNew+Tungarli+Rd%2C+Lonavala%2C+Maharashtra+410401!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=New+Tungarli+Road,Lonavala,Maharashtra+410401,India&zoom=15"
               className="h-72 w-full border-0 md:h-80"
               allowFullScreen
               loading="lazy"
