@@ -2,13 +2,21 @@ import { motion } from "framer-motion";
 import livingImg from "@/assets/gallery-living.jpg";
 import bedroomImg from "@/assets/gallery-bedroom.jpg";
 import poolImg from "@/assets/gallery-pool.jpg";
-import viewImg from "@/assets/gallery-view.jpg";
+import gazeboImg from "@/assets/gallery-view.jpg";
+import bedroom2Img from "@/assets/gallery-bedroom2.jpg";
+import bedroom3Img from "@/assets/gallery-bedroom3.jpg";
+import bedroom4Img from "@/assets/gallery-bedroom4.jpg";
+import bathroomImg from "@/assets/gallery-bathroom.jpg";
 
 const images = [
-  { src: livingImg, alt: "Spacious living room with mountain views", label: "Living Room" },
-  { src: bedroomImg, alt: "Master bedroom with panoramic windows", label: "Master Bedroom" },
-  { src: poolImg, alt: "Private swimming pool at dusk", label: "Swimming Pool" },
-  { src: viewImg, alt: "Terrace view of Western Ghats", label: "The View" },
+  { src: livingImg, alt: "Spacious living room with pool view", label: "Living Room" },
+  { src: bedroomImg, alt: "Luxurious master bedroom with designer interiors", label: "Master Bedroom" },
+  { src: poolImg, alt: "Private swimming pool with gazebo", label: "Swimming Pool" },
+  { src: gazeboImg, alt: "Gazebo seating area by the pool", label: "Gazebo" },
+  { src: bedroom2Img, alt: "Elegant bedroom with balcony view", label: "Bedroom 2" },
+  { src: bedroom3Img, alt: "Bedroom with gold marble accent wall", label: "Bedroom 3" },
+  { src: bedroom4Img, alt: "Cozy bedroom with warm lighting", label: "Bedroom 4" },
+  { src: bathroomImg, alt: "Bathrooms with bathtub facilities", label: "Bathrooms" },
 ];
 
 const GallerySection = () => {
