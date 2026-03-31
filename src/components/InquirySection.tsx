@@ -3,20 +3,18 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 
 const InquirySection = () => {
-  const { toast } = useToast();
-  const [loading, setLoading] = useState(false);
+  const [name, setName] = useState("");
+  const [checkIn, setCheckIn] = useState("");
+  const [checkOut, setCheckOut] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      toast({ title: "Inquiry Sent!", description: "We'll get back to you within 24 hours." });
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+    const text = `Hi, I'd like to book Eko Nest Villa Lonavala.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Check-in:* ${checkIn}%0A*Check-out:* ${checkOut}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Message:* ${encodeURIComponent(message)}`;
+    window.open(`https://wa.me/919082288678?text=${text}`, "_blank");
   };
 
   return (
@@ -31,7 +29,7 @@ const InquirySection = () => {
           <p className="mb-2 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-accent">Get in Touch</p>
           <h2 className="font-serif text-3xl font-bold text-primary-foreground md:text-4xl">Book Your Stay</h2>
           <p className="mt-3 font-sans text-primary-foreground/80">
-            Send us your preferred dates and we'll get back to you with availability and pricing.
+            Fill in your details and we'll connect with you on WhatsApp.
           </p>
         </motion.div>
         <motion.form
@@ -43,17 +41,19 @@ const InquirySection = () => {
           className="space-y-4"
         >
           <div className="grid gap-4 sm:grid-cols-2">
-            <Input placeholder="Your Name" required className="bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50 border-primary-foreground/20" />
-            <Input type="email" placeholder="Email Address" required className="bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50 border-primary-foreground/20" />
+            <Input placeholder="Your Name" required value={name} onChange={e => setName(e.target.value)} className="bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50 border-primary-foreground/20" />
+            <Input type="tel" placeholder="Phone Number" required value={phone} onChange={e => setPhone(e.target.value)} className="bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50 border-primary-foreground/20" />
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
-            <Input type="date" required className="bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20" />
-            <Input type="date" required className="bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20" />
+            <Input type="date" required value={checkIn} onChange={e => setCheckIn(e.target.value)} className="bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20" />
+            <Input type="date" required value={checkOut} onChange={e => setCheckOut(e.target.value)} className="bg-primary-foreground/10 text-primary-foreground border-primary-foreground/20" />
           </div>
-          <Input type="tel" placeholder="Phone Number" className="bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50 border-primary-foreground/20" />
-          <Textarea placeholder="Any special requests?" rows={4} className="bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50 border-primary-foreground/20" />
-          <Button type="submit" variant="accent" size="lg" className="w-full" disabled={loading}>
-            {loading ? "Sending..." : "Send Inquiry"}
+          <Textarea placeholder="Any special requests?" rows={4} value={message} onChange={e => setMessage(e.target.value)} className="bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50 border-primary-foreground/20" />
+          <Button type="submit" variant="accent" size="lg" className="w-full flex items-center justify-center gap-2">
+            <svg viewBox="0 0 32 32" className="h-5 w-5 fill-current">
+              <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.96A15.9 15.9 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.336 22.594c-.39 1.1-1.932 2.014-3.164 2.28-.844.18-1.946.322-5.656-1.216-4.748-1.966-7.804-6.78-8.038-7.094-.226-.314-1.886-2.512-1.886-4.792s1.194-3.402 1.618-3.868c.424-.466.924-.582 1.232-.582.308 0 .616.002.886.016.284.014.666-.108.942.718.39 1.1.942 2.674 1.026 2.866.084.192.14.416.028.672-.112.258-.168.418-.336.644-.168.226-.354.504-.504.676-.168.192-.344.4-.148.784.196.384.872 1.44 1.872 2.332 1.288 1.148 2.374 1.504 2.71 1.672.336.168.532.14.728-.084.196-.226.84-.98 1.064-1.316.224-.336.448-.28.756-.168.308.112 1.952.92 2.286 1.088.334.168.556.252.64.39.084.14.084.784-.306 1.882z" />
+            </svg>
+            Send via WhatsApp
           </Button>
         </motion.form>
       </div>
