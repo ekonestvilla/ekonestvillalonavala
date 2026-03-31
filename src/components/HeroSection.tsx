@@ -29,7 +29,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6 max-w-4xl font-serif text-4xl font-bold leading-tight text-primary-foreground md:text-6xl lg:text-7xl"
         >
-          Your Private Escape in Lonavala
+          Eko Nest Villa Lonavla
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
