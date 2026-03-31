@@ -8,8 +8,8 @@ const Footer = () => (
         <p className="mt-1 font-sans text-sm text-background/60">Your luxury retreat in the Western Ghats</p>
       </div>
       <div className="flex items-center gap-6">
-        <a href="tel:+919004482582" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
-          <Phone className="h-4 w-4" /> +91 90044 82582
+        <a href="tel:+919082288678" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
+          <Phone className="h-4 w-4" /> +91 90822 88678
         </a>
         <a href="mailto:Ekonestvilla@gmail.com" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
           <Mail className="h-4 w-4" /> Ekonestvilla@gmail.com
