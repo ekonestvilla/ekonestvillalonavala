@@ -35,7 +35,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mb-10 max-w-2xl font-sans text-lg font-light text-secondary/90"
+          className="mb-10 max-w-2xl px-2 font-sans text-sm font-light text-secondary/90 sm:text-base md:text-lg"
         >
           Where luxury meets nature — step into your own private 5BHK villa in Lonavala with a sparkling pool, panoramic mountain views, and tranquil hillside vibes. A perfect blend of comfort and elegance, this is your space to unwind, reconnect, and create unforgettable moments with friends &amp; family.
         </motion.p>
