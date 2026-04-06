@@ -14,7 +14,7 @@ const amenities = [
   { icon: Utensils, label: "Modern Kitchenette" },
   { icon: Tv, label: "50\" LED Smart TV" },
   { icon: ShieldCheck, label: "24/7 Security" },
-  { icon: Dumbbell, label: "Swimming Pool" },
+  { icon: Waves, label: "Swimming Pool" },
 ];
 
 const AmenitiesSection = () => {
