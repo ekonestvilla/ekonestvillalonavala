@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { Bed, Bath, Users, Mountain, Car, Wifi } from "lucide-react";
+import { Bed, Bath, Users, Waves, Car, Wifi } from "lucide-react";
 
 const highlights = [
   { icon: Bed, label: "5 Luxurious Bedrooms", desc: "Each with attached washroom" },
   { icon: Bath, label: "2 Relaxing Bathtubs", desc: "For your refreshment" },
   { icon: Users, label: "Up to 25 Guests", desc: "Perfect for large groups" },
-  { icon: Mountain, label: "Private Pool", desc: "24 ft × 12 ft with gazebo" },
+  { icon: Waves, label: "Private Pool", desc: "24 ft × 12 ft with gazebo" },
   { icon: Car, label: "Private Parking", desc: "Space for up to 4 cars" },
   { icon: Wifi, label: "Modern Living", desc: "50\" LED & kitchenette" },
 ];

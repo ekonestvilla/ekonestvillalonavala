@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  Utensils, Tv, Flame, TreePine, Dumbbell, ShieldCheck,
+  Utensils, Tv, Flame, TreePine, Waves, ShieldCheck,
   Wind, Coffee, Gamepad2, Music,
 } from "lucide-react";
 
@@ -14,7 +14,7 @@ const amenities = [
   { icon: Utensils, label: "Modern Kitchenette" },
   { icon: Tv, label: "50\" LED Smart TV" },
   { icon: ShieldCheck, label: "24/7 Security" },
-  { icon: Dumbbell, label: "Swimming Pool" },
+  { icon: Waves, label: "Swimming Pool" },
 ];
 
 const AmenitiesSection = () => {
