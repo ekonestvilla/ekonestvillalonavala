@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  Utensils, Tv, Flame, TreePine, Dumbbell, ShieldCheck,
+  Utensils, Tv, Flame, TreePine, Waves, ShieldCheck,
   Wind, Coffee, Gamepad2, Music,
 } from "lucide-react";
 
