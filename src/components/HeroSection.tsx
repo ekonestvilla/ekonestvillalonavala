@@ -43,7 +43,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex gap-4"
+          className="flex flex-col gap-3 sm:flex-row sm:gap-4"
         >
           <Button variant="hero" size="lg" onClick={() => document.getElementById("inquiry")?.scrollIntoView({ behavior: "smooth" })}>
             Book Your Stay
