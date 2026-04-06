@@ -27,7 +27,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-6 max-w-4xl font-serif text-4xl font-bold leading-tight text-primary-foreground md:text-6xl lg:text-7xl"
+          className="mb-6 max-w-4xl font-serif text-3xl font-bold leading-tight text-primary-foreground sm:text-4xl md:text-6xl lg:text-7xl"
         >
           Eko Nest Villa Lonavala
         </motion.h1>
@@ -35,7 +35,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mb-10 max-w-2xl font-sans text-lg font-light text-secondary/90"
+          className="mb-10 max-w-2xl px-2 font-sans text-sm font-light text-secondary/90 sm:text-base md:text-lg"
         >
           Where luxury meets nature — step into your own private 5BHK villa in Lonavala with a sparkling pool, panoramic mountain views, and tranquil hillside vibes. A perfect blend of comfort and elegance, this is your space to unwind, reconnect, and create unforgettable moments with friends &amp; family.
         </motion.p>
@@ -43,7 +43,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex gap-4"
+          className="flex flex-col gap-3 sm:flex-row sm:gap-4"
         >
           <Button variant="hero" size="lg" onClick={() => document.getElementById("inquiry")?.scrollIntoView({ behavior: "smooth" })}>
             Book Your Stay
