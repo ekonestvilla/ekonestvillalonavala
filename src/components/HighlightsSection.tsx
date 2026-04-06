@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Bed, Bath, Users, Mountain, Car, Wifi } from "lucide-react";
+import { Bed, Bath, Users, Waves, Car, Wifi } from "lucide-react";
 
 const highlights = [
   { icon: Bed, label: "5 Luxurious Bedrooms", desc: "Each with attached washroom" },
