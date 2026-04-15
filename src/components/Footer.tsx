@@ -18,7 +18,7 @@ const Footer = () => (
         <a href="mailto:Ekonestvilla@gmail.com" className="flex items-center gap-2 text-sm text-background/80 transition-colors hover:text-background">
           <Mail className="h-4 w-4 shrink-0" /> Ekonestvilla@gmail.com
         </a>
-        <a href="https://instagram.com/eko_nest_villa" target="_blank" rel="noopener noreferrer" className="text-background/80 transition-colors hover:text-background">
+        <a href="https://instagram.com/eko_nest_villa_lonavala" target="_blank" rel="noopener noreferrer" className="text-background/80 transition-colors hover:text-background">
           <Instagram className="h-5 w-5" />
         </a>
       </div>
