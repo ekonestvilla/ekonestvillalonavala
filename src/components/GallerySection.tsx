@@ -2,21 +2,23 @@ import { motion } from "framer-motion";
 import livingImg from "@/assets/gallery-living.jpg";
 import bedroomImg from "@/assets/gallery-bedroom.jpg";
 import poolImg from "@/assets/gallery-pool.jpg";
-import gazeboImg from "@/assets/gallery-view.jpg";
+import diningImg from "@/assets/gallery-dining.jpg";
 import bedroom2Img from "@/assets/gallery-bedroom2.jpg";
 import bedroom3Img from "@/assets/gallery-bedroom3.jpg";
 import bedroom4Img from "@/assets/gallery-bedroom4.jpg";
 import bathroomImg from "@/assets/gallery-bathroom.jpg";
+import bathroom2Img from "@/assets/gallery-bathroom2.jpg";
 
 const images = [
-  { src: livingImg, alt: "Spacious living room with pool view", label: "Living Room" },
-  { src: bedroomImg, alt: "Luxurious master bedroom with designer interiors", label: "Master Bedroom" },
-  { src: poolImg, alt: "Private swimming pool with gazebo", label: "Swimming Pool" },
-  { src: gazeboImg, alt: "Gazebo seating area by the pool", label: "Gazebo" },
-  { src: bedroom2Img, alt: "Elegant bedroom with balcony view", label: "Bedroom 2" },
-  { src: bedroom3Img, alt: "Bedroom with gold marble accent wall", label: "Bedroom 3" },
-  { src: bedroom4Img, alt: "Cozy bedroom with warm lighting", label: "Bedroom 4" },
-  { src: bathroomImg, alt: "Bathrooms with bathtub facilities", label: "Bathrooms" },
+  { src: poolImg, alt: "Private pool with gazebo seating at dusk", label: "Pool & Gazebo" },
+  { src: livingImg, alt: "Spacious living room with designer ceiling", label: "Living Room" },
+  { src: diningImg, alt: "Elegant dining area with marble accent wall", label: "Dining Area" },
+  { src: bedroomImg, alt: "Master bedroom with garden view", label: "Master Bedroom" },
+  { src: bedroom2Img, alt: "Bedroom with direct pool access", label: "Pool-View Bedroom" },
+  { src: bedroom3Img, alt: "Bedroom with marble accent wall", label: "Bedroom 3" },
+  { src: bedroom4Img, alt: "Spacious bedroom with designer headboard", label: "Bedroom 4" },
+  { src: bathroomImg, alt: "Bathroom with rose-petal bathtub", label: "Luxury Bath" },
+  { src: bathroom2Img, alt: "Floral bathroom with rose-petal bath", label: "Floral Bath" },
 ];
 
 const GallerySection = () => {
