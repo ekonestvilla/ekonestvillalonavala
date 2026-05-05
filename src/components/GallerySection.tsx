@@ -8,6 +8,9 @@ import bedroom3Img from "@/assets/gallery-bedroom3.jpg";
 import bedroom4Img from "@/assets/gallery-bedroom4.jpg";
 import bathroomImg from "@/assets/gallery-bathroom.jpg";
 import bathroom2Img from "@/assets/gallery-bathroom2.jpg";
+import gamesImg from "@/assets/gallery-games.jpg";
+import tableTennisImg from "@/assets/gallery-tabletennis.jpg";
+import balconyImg from "@/assets/gallery-balcony.jpg";
 
 const images = [
   { src: poolImg, alt: "Private pool with gazebo seating at dusk", label: "Pool & Gazebo" },
@@ -19,6 +22,9 @@ const images = [
   { src: bedroom4Img, alt: "Spacious bedroom with designer headboard", label: "Bedroom 4" },
   { src: bathroomImg, alt: "Bathroom with rose-petal bathtub", label: "Luxury Bath" },
   { src: bathroom2Img, alt: "Floral bathroom with rose-petal bath", label: "Floral Bath" },
+  { src: tableTennisImg, alt: "Table tennis with garden view", label: "Table Tennis" },
+  { src: gamesImg, alt: "Indoor games room with carrom and bunk beds", label: "Games Room" },
+  { src: balconyImg, alt: "Private balcony with seating and greenery views", label: "Balcony" },
 ];
 
 const GallerySection = () => {
