@@ -1,4 +1,15 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+  type CarouselApi,
+} from "@/components/ui/carousel";
+import { useEffect } from "react";
 import livingImg from "@/assets/gallery-living.jpg";
 import bedroomImg from "@/assets/gallery-bedroom.jpg";
 import poolImg from "@/assets/gallery-pool.jpg";
@@ -28,6 +39,26 @@ const images = [
 ];
 
 const GallerySection = () => {
+  const [open, setOpen] = useState(false);
+  const [startIndex, setStartIndex] = useState(0);
+  const [api, setApi] = useState<CarouselApi | null>(null);
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+    setCurrent(api.selectedScrollSnap());
+    const onSelect = () => setCurrent(api.selectedScrollSnap());
+    api.on("select", onSelect);
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [api]);
+
+  const handleOpen = (index: number) => {
+    setStartIndex(index);
+    setOpen(true);
+  };
+
   return (
     <section id="gallery" className="bg-card py-20 px-6">
       <div className="mx-auto max-w-6xl">
@@ -48,7 +79,8 @@ const GallerySection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15 }}
-              className="group relative overflow-hidden rounded-lg"
+              className="group relative cursor-pointer overflow-hidden rounded-lg"
+              onClick={() => handleOpen(i)}
             >
               <img
                 src={img.src}
@@ -65,6 +97,38 @@ const GallerySection = () => {
             </motion.div>
           ))}
         </div>
+
+        <Dialog open={open} onOpenChange={setOpen}>
+          <DialogContent className="max-w-5xl border-none bg-background/95 p-4 sm:p-6">
+            <Carousel
+              setApi={setApi}
+              opts={{ startIndex, loop: true }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {images.map((img) => (
+                  <CarouselItem key={img.label}>
+                    <div className="flex flex-col items-center">
+                      <img
+                        src={img.src}
+                        alt={img.alt}
+                        className="max-h-[75vh] w-full rounded-lg object-contain"
+                      />
+                      <p className="mt-3 text-center font-sans text-sm font-semibold text-foreground">
+                        {img.label}
+                      </p>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2 sm:-left-12" />
+              <CarouselNext className="right-2 sm:-right-12" />
+            </Carousel>
+            <p className="text-center font-sans text-xs text-muted-foreground">
+              {current + 1} / {images.length}
+            </p>
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
