@@ -99,20 +99,21 @@ const GallerySection = () => {
         </div>
 
         <Dialog open={open} onOpenChange={setOpen}>
-          <DialogContent className="w-[95vw] max-w-5xl border-none bg-background/95 p-3 sm:p-6">
+          <DialogContent className="h-[100dvh] w-screen max-w-none gap-2 rounded-none border-none bg-background/95 p-0 sm:h-auto sm:w-[95vw] sm:max-w-5xl sm:rounded-lg sm:p-6">
             <Carousel
               setApi={setApi}
-              opts={{ startIndex, loop: true }}
+              opts={{ startIndex, loop: true, align: "center", containScroll: "trimSnaps" }}
               className="w-full"
             >
               <CarouselContent className="ml-0">
                 {images.map((img) => (
                   <CarouselItem key={img.label} className="pl-0">
-                    <div className="flex flex-col items-center">
+                    <div className="flex h-[100dvh] w-full flex-col items-center justify-center px-2 sm:h-auto sm:px-0">
                       <img
                         src={img.src}
                         alt={img.alt}
-                        className="max-h-[70vh] w-full rounded-lg object-contain"
+                        draggable={false}
+                        className="max-h-[80dvh] w-full select-none rounded-lg object-contain sm:max-h-[75vh]"
                       />
                       <p className="mt-3 text-center font-sans text-sm font-semibold text-foreground">
                         {img.label}
@@ -121,10 +122,10 @@ const GallerySection = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-2 z-10 bg-background/80 sm:-left-12" />
-              <CarouselNext className="right-2 z-10 bg-background/80 sm:-right-12" />
+              <CarouselPrevious className="left-2 z-20 h-10 w-10 bg-background/90 shadow-md sm:-left-12" />
+              <CarouselNext className="right-2 z-20 h-10 w-10 bg-background/90 shadow-md sm:-right-12" />
             </Carousel>
-            <p className="text-center font-sans text-xs text-muted-foreground">
+            <p className="absolute bottom-3 left-1/2 z-20 -translate-x-1/2 rounded-full bg-background/80 px-3 py-1 text-center font-sans text-xs text-muted-foreground sm:static sm:translate-x-0 sm:bg-transparent">
               {current + 1} / {images.length}
             </p>
           </DialogContent>
