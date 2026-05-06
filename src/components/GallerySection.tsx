@@ -105,9 +105,9 @@ const GallerySection = () => {
               opts={{ startIndex, loop: true }}
               className="w-full"
             >
-              <CarouselContent>
+              <CarouselContent className="ml-0">
                 {images.map((img) => (
-                  <CarouselItem key={img.label}>
+                  <CarouselItem key={img.label} className="pl-0">
                     <div className="flex flex-col items-center">
                       <img
                         src={img.src}
