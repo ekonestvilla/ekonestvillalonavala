@@ -99,7 +99,7 @@ const GallerySection = () => {
         </div>
 
         <Dialog open={open} onOpenChange={setOpen}>
-          <DialogContent className="max-w-5xl border-none bg-background/95 p-4 sm:p-6">
+          <DialogContent className="w-[95vw] max-w-5xl border-none bg-background/95 p-3 sm:p-6">
             <Carousel
               setApi={setApi}
               opts={{ startIndex, loop: true }}
@@ -112,7 +112,7 @@ const GallerySection = () => {
                       <img
                         src={img.src}
                         alt={img.alt}
-                        className="max-h-[75vh] w-full rounded-lg object-contain"
+                        className="max-h-[70vh] w-full rounded-lg object-contain"
                       />
                       <p className="mt-3 text-center font-sans text-sm font-semibold text-foreground">
                         {img.label}
@@ -121,8 +121,8 @@ const GallerySection = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-2 sm:-left-12" />
-              <CarouselNext className="right-2 sm:-right-12" />
+              <CarouselPrevious className="left-2 z-10 bg-background/80 sm:-left-12" />
+              <CarouselNext className="right-2 z-10 bg-background/80 sm:-right-12" />
             </Carousel>
             <p className="text-center font-sans text-xs text-muted-foreground">
               {current + 1} / {images.length}
